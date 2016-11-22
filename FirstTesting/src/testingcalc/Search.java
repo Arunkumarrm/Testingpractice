@@ -11,6 +11,7 @@ public class Search {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
 	     WebDriver driver = new FirefoxDriver();
+	     //comment
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
 	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	      
