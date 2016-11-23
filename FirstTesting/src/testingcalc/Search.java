@@ -15,7 +15,7 @@ public class Search {
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
 	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	      
-	      //Launch website
+	      //Launch web site
 	      driver.navigate().to("http://test-popapp.rhcloud.com/#/qsearch");
 	      
 	      driver.manage().window().maximize();
