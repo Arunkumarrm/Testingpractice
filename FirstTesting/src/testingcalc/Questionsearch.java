@@ -7,9 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Questionsearch {
-
-	public static void main(String[] args) {
 	
+	public static  void questionsearch(){
 		System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
 	     WebDriver driver = new FirefoxDriver();
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
@@ -26,6 +25,11 @@ public class Questionsearch {
 	      driver.findElement(By.xpath("html/body/div[4]/div/form/div[3]/div/input")).click();
 	      driver.findElement(By.xpath("html/body/div[4]/div/div/div[1]/div/div[2]/div/input")).sendKeys("core java");
 	      driver.findElement(By.xpath("html/body/div[4]/div/div/div[1]/div/div[2]/div/span/button")).click();
+	}
+
+	public static void main(String[] args) {
+	
+		Questionsearch.questionsearch();
 	      
 	      
 

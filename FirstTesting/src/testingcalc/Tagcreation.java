@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Tagcreation {
-
-	public static void main(String[] args) {
-		System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
-	     WebDriver driver = new FirefoxDriver();
+	
+	public static void tagcreation(){
+		  System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
+	      WebDriver driver = new FirefoxDriver();
 	      
 	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	      
@@ -31,7 +31,12 @@ public class Tagcreation {
 	      driver.findElement(By.id("iTagDesc")).sendKeys("WebDriver");
 	      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	      driver.findElement(By.xpath("html/body/div[4]/div/div/div[1]/div[2]/form/div[3]/div/input")).click();
-	                
+		
+	}
+
+	public static void main(String[] args) {
+		
+	                Tagcreation.tagcreation();
 
 	}
 

@@ -7,8 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Search {
-
-	public static void main(String[] args) {
+	
+	public static void search(){
+		
 		System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
 	     WebDriver driver = new FirefoxDriver();
 	     //comment
@@ -38,7 +39,12 @@ public class Search {
 	      driver.findElement(By.xpath("html/body/div[4]/div/div/div[1]/div/div[2]/div/input")).sendKeys("core java");
 	      
 	      driver.findElement(By.xpath("html/body/div[4]/div/div/div[1]/div/div[2]/div/span/button")).click();
-	      
+		
+	}
+
+	public static void main(String[] args) {
+		
+	    Search.search();  
 	}
 
 }
