@@ -9,17 +9,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Questioncreate {
 	
 	public static void questioncreate(){
-		System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
-	     WebDriver driver = new FirefoxDriver();
+		  System.setProperty("webdriver.gecko.driver","E:\\Testing\\geckodriver.exe");
+	      WebDriver driver = new FirefoxDriver();
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
 	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	      
-	      //Launch website
+	      //Launch Webdriver
 	      driver.navigate().to("http://test-popapp.rhcloud.com/#/qcreate");
 	      driver.manage().window().maximize();
 	      driver.findElement(By.xpath(".//*[@id='menu-navbar-collapse']/ul[2]/li/a/span")).click();
 	      driver.findElement(By.xpath(".//*[@id='menu-navbar-collapse']/ul[2]/li/ul/li[1]/a")).click();
-         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+          driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	      driver.findElement(By.id("email")).sendKeys("gopi.kasu@gmail.com");
 	      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	      driver.findElement(By.id("password")).sendKeys("password");
@@ -35,10 +34,9 @@ public class Questioncreate {
 	      driver.findElement(By.xpath("html/body/div[4]/div/div/div[1]/div[2]/form/div[5]/div/input")).click();
 	      }
 
-	public static void main(String[] args) {
-		Questioncreate.questioncreate();
-	            
-
+	public static void main(String[] args) 
+	{
+		Questioncreate.questioncreate();	          
 	}
 
 }

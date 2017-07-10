@@ -5,7 +5,12 @@
     <classes>
       <class name="testingNg.TestApp">
         <methods>
+          <include name="test4"/>
           <include name="test5"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test6"/>
+          <include name="test1"/>
         </methods>
       </class> <!-- testingNg.TestApp -->
     </classes>
